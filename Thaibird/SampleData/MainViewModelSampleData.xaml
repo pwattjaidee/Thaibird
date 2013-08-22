@@ -1,0 +1,34 @@
+<ViewModels:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Twitt" xmlns:ViewModels="clr-namespace:Twitt.ViewModels" >
+    
+    <ViewModels:MainViewModel.Items>
+    <local:ItemViewModel DisplayUserName="User One" CreatedDate="09/9/2010 4:35pm" TweetText="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" TitleColor="White"/>
+    <local:ItemViewModel DisplayUserName="User Two" CreatedDate="09/9/2010 3:35pm" TweetText="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" TitleColor="White"/>
+    <local:ItemViewModel DisplayUserName="User Three" CreatedDate="09/9/2010 2:35pm" TweetText="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" TitleColor="Black"/>
+    <local:ItemViewModel DisplayUserName="User Four" CreatedDate="09/9/2010 1:35pm" TweetText="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" TitleColor="Black"/>
+    </ViewModels:MainViewModel.Items>
+
+    <ViewModels:MainViewModel.MentionItems>
+        <local:ItemViewModel DisplayUserName="User One" CreatedDate="09/9/2010 4:35pm" TweetText="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Two" CreatedDate="09/9/2010 3:35pm" TweetText="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Three" CreatedDate="09/9/2010 2:35pm" TweetText="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" TitleColor="Black"/>
+        <local:ItemViewModel DisplayUserName="User Four" CreatedDate="09/9/2010 1:35pm" TweetText="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" TitleColor="Black"/>
+    </ViewModels:MainViewModel.MentionItems>
+
+    <ViewModels:MainViewModel.DirectMessageItems>
+        <local:ItemViewModel DisplayUserName="User One" CreatedDate="09/9/2010 4:35pm" TweetText="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Two" CreatedDate="09/9/2010 3:35pm" TweetText="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Three" CreatedDate="09/9/2010 2:35pm" TweetText="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" TitleColor="Black"/>
+        <local:ItemViewModel DisplayUserName="User Four" CreatedDate="09/9/2010 1:35pm" TweetText="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" TitleColor="Black"/>
+    </ViewModels:MainViewModel.DirectMessageItems>
+
+    <ViewModels:MainViewModel.FavoriteItems>
+        <local:ItemViewModel DisplayUserName="User One" CreatedDate="09/9/2010 4:35pm" TweetText="Maecenas praesent accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Two" CreatedDate="09/9/2010 3:35pm" TweetText="Pharetra placerat pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent" TitleColor="White"/>
+        <local:ItemViewModel DisplayUserName="User Three" CreatedDate="09/9/2010 2:35pm" TweetText="Accumsan bibendum dictumst eleifend facilisi faucibus habitant inceptos interdum lobortis nascetur pharetra placerat" TitleColor="Black"/>
+        <local:ItemViewModel DisplayUserName="User Four" CreatedDate="09/9/2010 1:35pm" TweetText="Pulvinar sagittis senectus sociosqu suscipit torquent ultrices vehicula volutpat maecenas praesent accumsan bibendum" TitleColor="Black"/>
+    </ViewModels:MainViewModel.FavoriteItems>
+
+</ViewModels:MainViewModel>

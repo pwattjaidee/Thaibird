@@ -1,0 +1,75 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Thaibird.Pages.Support"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:AdDuplex;assembly=AdDuplex.AdControl.Silverlight" xmlns:my1="clr-namespace:Google.AdMob.Ads.WindowsPhone7.WPF;assembly=Google.AdMob.Ads.WindowsPhone7">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Thaibird" Style="{StaticResource PhoneTextNormalStyle}" Foreground="Gold" />
+            <TextBlock x:Name="PageTitle" Text="About" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="Silver"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            
+            <TextBlock FontWeight="Normal" Height="35" HorizontalAlignment="Left" Margin="23,18,0,0" Name="textBlock7" Text="&quot;Thanks for using Thaibird for Windows Phone.&quot;" VerticalAlignment="Top" Width="428" TextAlignment="Center" Foreground="Silver" />
+            <TextBlock FontWeight="Normal" Height="35" HorizontalAlignment="Left" Margin="219,59,0,0" Name="textBlock2" Text="Tanawat Pitchayapryt" TextAlignment="Right" VerticalAlignment="Top" Width="212" Foreground="Silver" FontStyle="Italic" />
+            
+            <HyperlinkButton Content="About me" FontSize="20" Foreground="#FF00B4FF" Height="30" Margin="0,562,234,0" Name="hyperlinkButton2" VerticalAlignment="Top" NavigateUri="http://th.linkedin.com/in/pwattjaidee" TargetName="_blank" HorizontalAlignment="Right" Width="128" />
+            <HyperlinkButton Content="Follow me" FontSize="20" Foreground="#FF00B4FF" Height="30" Margin="245,562,105,0" Name="hyperlinkButton3" VerticalAlignment="Top" NavigateUri="http://twitter.com/pwattjaidee" TargetName="_blank" />
+
+            <TextBlock Height="35" HorizontalAlignment="Left" Margin="24,398,0,0" Name="textBlock1" Text="Acknowledgement:" VerticalAlignment="Top" Width="322" FontWeight="Bold" Foreground="Silver" />
+            <HyperlinkButton Height="30" HorizontalAlignment="Left" Margin="6,429,0,0" Name="hp1" VerticalAlignment="Top" Width="171" Foreground="#FF00B4FF" Content="Sam Jarawan" FontSize="20" NavigateUri="http://samjarawan.blogspot.com" TargetName="_blank" />
+            <HyperlinkButton Height="30" HorizontalAlignment="Left" Margin="159,429,0,0" Name="hp2" VerticalAlignment="Top" Width="163" Foreground="#FF00B4FF" Content="Jeff Wilcox" FontSize="20" NavigateUri="http://www.jeff.wilcox.name/blog" TargetName="_blank" />
+            <HyperlinkButton Height="30" HorizontalAlignment="Left" Margin="291,429,0,0" Name="hp3" VerticalAlignment="Top" Width="177" Foreground="#FF00B4FF" Content="Peter Torr" FontSize="20" NavigateUri="http://blogs.msdn.com/b/ptorr" TargetName="_blank" />
+
+            
+            
+            <HyperlinkButton Content="Feature Request / Bug Report / Donate" FontSize="20" Foreground="#FF00B4FF" Height="30" HorizontalAlignment="Left" Margin="59,164,0,0" Name="hyperlinkButton1" VerticalAlignment="Top" Width="372" NavigateUri="http://wp.me/s1idgQ-thaibird" TargetName="_blank" />
+            
+            <TextBlock FontWeight="Normal" Foreground="Silver" Height="35" HorizontalAlignment="Left" Margin="381,562,0,0" Name="textBlock3" Text="(v 0.9.5)" TextAlignment="Right" VerticalAlignment="Top" Width="78" />
+            
+            <HyperlinkButton Height="70.5" Width="160.5" NavigateUri="https://www.paypal.com/th/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=QRMWLPVGWRTPQ" TargetName="_blank" Margin="159,261,160,275">
+                <HyperlinkButton.Background>
+                    <ImageBrush ImageSource="/Thaibird;component/btn_paynowCC_LG.png" />
+                </HyperlinkButton.Background>
+            </HyperlinkButton>
+
+
+            <TextBlock FontWeight="Normal" Foreground="Silver" Height="35" HorizontalAlignment="Left" Margin="5,227,0,0" Name="textBlock4" Text="&quot;Like my app? Buy me a Green Tea!&quot;" TextAlignment="Center" VerticalAlignment="Top" Width="474" />
+            <HyperlinkButton Margin="0,566,368,10" NavigateUri="http://creativecommons.org/licenses/by-nc-sa/3.0/" TargetName="_blank" >
+                <HyperlinkButton.Background>
+                    <ImageBrush ImageSource="/Thaibird;component/CC30.png" />
+                </HyperlinkButton.Background>
+            </HyperlinkButton>
+            <my1:BannerAd 
+                xmlns:google="clr-namespace:Google.AdMob.Ads.WindowsPhone7.WPF;assembly=Google.AdMob.Ads.WindowsPhone7"
+                HorizontalAlignment="Left" 
+                Margin="0,475,0,0" 
+                Name="bannerAd1" 
+                VerticalAlignment="Top" 
+                AdUnitID="a14e706222616d0" />
+        </Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Thaibird;component/bg.png" />
+        </Grid.Background>
+    </Grid>
+
+</phone:PhoneApplicationPage>
